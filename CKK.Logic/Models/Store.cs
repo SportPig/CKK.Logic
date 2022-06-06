@@ -40,7 +40,7 @@ namespace CKK.Logic.Models
         }
         public AddStoreItem(Product product)
         {
-
+            
         }
         public void RemoveStoreItem(int productNumber)
         {

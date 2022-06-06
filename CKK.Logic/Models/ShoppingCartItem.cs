@@ -6,13 +6,12 @@ namespace CKK.Logic.Models
     {
         private Product _product;
         private int _quantity;
-        private decimal _price { get; set; }
+      
 
-        public ShoppingCartItem(Product product, int quantity, int price)
+        public ShoppingCartItem(Product product, int quantity)
         {
             _product = product;
             _quantity = quantity;
-            _price = price;
         }
         public int GetQuantity()
         {
