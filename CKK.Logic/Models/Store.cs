@@ -6,7 +6,7 @@ namespace CKK.Logic.Models
 {
     public class Store
     {
-        private int _Id;
+        private int id;
         private string _name;
         private Product _product1;
         private Product _product2;
@@ -15,7 +15,7 @@ namespace CKK.Logic.Models
 
         public Store(int id, string name, Product product1, Product product2, Product product3)
         {
-            _Id = id;
+            this.id = id;
             _name = name;
             _product1 = product1;
             _product2 = product2;
@@ -24,11 +24,11 @@ namespace CKK.Logic.Models
         }
         public int GetId()
         {
-            return _Id;
+            return id;
         }
         public void SetId(int id)
         {
-            _Id = id;
+            this.id = id;
         }
         public string GetName()
         {

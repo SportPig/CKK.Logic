@@ -5,25 +5,25 @@ namespace CKK.Logic.Models
 {
     public class Product
     {
-        private int _Id;
+        private int id;
         private string _name;
         private decimal _price;
       
 
         public Product(int id, string name, decimal price)
         {
-            _Id = id;
+            this.id = id;
             _name = name;
             _price = price;
         }
 
         public int GetId()
         {
-            return _Id;
+            return id;
         }
         public void SetId(int id)
         {
-            _Id = id;
+            this.id = id;
         }
         public string GetName()
         {
