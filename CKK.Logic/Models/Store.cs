@@ -11,17 +11,7 @@ namespace CKK.Logic.Models
         private Product _product1;
         private Product _product2;
         private Product _product3;
-        
 
-        //public Store(int id, string name, Product product1, Product product2, Product product3)
-        //{
-       //     this.id = id;
-           // /_name = name;
-            //_product1 = product1;
-            //_product2 = product2;
-            // = product3;
-           
-       // }
         public int GetId()
         {
             return id;
