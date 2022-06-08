@@ -11,7 +11,7 @@ namespace CKK.Logic.Models
         private Product _product1;
         private Product _product2;
         private Product _product3;
-        private int _productNumber;
+        
 
         public Store(int id, string name, Product product1, Product product2, Product product3)
         {
