@@ -13,14 +13,14 @@ namespace CKK.Logic.Models
         private Product _product3;
         private int _productNumber;
 
-        public Store(int id, string name, Product product1, Product product2, Product product3, int productNumber)
+        public Store(int id, string name, Product product1, Product product2, Product product3)
         {
             _Id = id;
             _name = name;
             _product1 = product1;
             _product2 = product2;
             _product3 = product3;
-            _productNumber = productNumber;
+           
         }
         public int GetId()
         {
