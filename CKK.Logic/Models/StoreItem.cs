@@ -4,7 +4,7 @@ namespace CKK.Logic.Models
 {
     public class StoreItem
     {
-        private Product _product;
+        private Product _product { get; set; }
         private int _quantity { get; set; }
 
         public StoreItem(Product product, int Quantity)
