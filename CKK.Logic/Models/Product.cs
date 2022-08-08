@@ -8,13 +8,20 @@ namespace CKK.Logic.Models
         private int id;
         private string _name;
         private decimal _price;
-      
+        public string Id;
+
+        public string Name { get; set; }
+        public int Price { get; set; }
 
         public Product(int id, string name, decimal price)
         {
             this.id = id;
             _name = name;
             _price = price;
+        }
+
+        public Product()
+        {
         }
 
         public int GetId()
@@ -41,12 +48,6 @@ namespace CKK.Logic.Models
         {
             _price = price;
         }
-      
-        public Product()
-        {
-
-        }
-
         
     }
 

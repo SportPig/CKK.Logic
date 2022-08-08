@@ -7,10 +7,11 @@ namespace CKK.Logic.Models
     class ShoppingCart
     {
         private Customer _customer;
-        private Product _product1;
-        private Product _product2;
-        private Product _product3;
-        private int customerId;
+        private ShoppingCartItem _product1;
+        private ShoppingCartItem _product2;
+        private ShoppingCartItem _product3;
+
+        public int customerId { get; private set; }
 
         public ShoppingCart(Customer customer)
         {
@@ -22,20 +23,38 @@ namespace CKK.Logic.Models
             return customerId;
         }
 
-        public void AddProduct(Product product)
+        public void GetProductById(ShoppingCartItem id)
         {
-            if (_product1 == null)
-            {
-                _product1 = product;
-            }
-            else if (_product2 == null)
-            {
-                _product2 = product;
-            }
-            else if (_product3 == null)
-            {
-                _product3 = product;
-            }
+
+        }
+
+        public void AddProduct(ShoppingCartItem product)
+        {
+            if (ShoppingCart.Contains(product))
+                return;
+
+            ShoppingCart.Add(product);
+
+        }
+        public void AddProduct(ShoppingCartItem product, int quantity)
+        {
+            
+        }
+
+        public void RemoveProduct(Product product, int quantity)
+        {
+            ShoppingCartItem.Remove(product);
+
+        }
+
+        public decimal GetTotal()
+        {
+            return _product1.GetTotal();
+        }
+
+
+        public void GetProduct(int productNumber)
+        {
 
         }
     }

@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace CKK.Logic.Models
 {
     public class ShoppingCartItem
@@ -8,6 +10,7 @@ namespace CKK.Logic.Models
         private int _quantity;
         private Product product1;
         private Product product2;
+        private Product productId;
 
         //public int Quantity { get; internal set; }
 
@@ -21,6 +24,11 @@ namespace CKK.Logic.Models
         {
             this.product1 = product1;
             this.product2 = product2;
+        }
+
+        public ShoppingCartItem(Product productId)
+        {
+            this.productId = productId;
         }
 
         public Product GetProduct()

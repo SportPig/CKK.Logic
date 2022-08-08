@@ -9,12 +9,25 @@ namespace ShoppingCartTest
         [Fact]
         public void AddProduct()
         {
-            var product = new Product();
+            var cart = new ShoppingCart();
+            var item1 = new Product() { Id = "124869", Name = "shirt", Price = 25 };
 
-            var actual = Product.product("1");
+            ShoppingCart.AddProduct(item1, 1);
 
-            Assert.Equal(1, actual);
+            Assert.True(ShoppingCart.Contains(item1));
+        }
 
+        [Fact]
+        public void RemoveProduct()
+        {
+            var cart = new ShoppingCart();
+            cart.RemoveProduct();
+        }
+        [Fact]
+        public void GetTotal()
+        {
+            var cart = new ShoppingCart();
+            cart.GetTotal();
         }
     }
 }
